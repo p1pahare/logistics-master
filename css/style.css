@@ -101,6 +101,8 @@ h1, h2, h3, h4, h5,
     box-shadow: none !important; }
 
 .site-section {
+  z-index: 10;
+  background-color: #fff;
   padding: 2.5em 0; }
   @media (min-width: 768px) {
     .site-section {
@@ -1384,3 +1386,7 @@ h1, h2, h3, h4, h5,
 .custom-pagination span {
   background: #e6e6e6;
   color: #000; }
+
+.mt20 {
+  margin-top: 20px;
+}
