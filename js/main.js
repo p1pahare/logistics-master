@@ -8,7 +8,19 @@ jQuery(document).ready(function($) {
 
 	"use strict";
 
-	
+		$(".toggleButton").on("click", function(event) {
+        event.preventDefault();
+		console.log("learned more toggle button")
+        var paragraph = $(this).closest(".contentExp").find(".paragraph");
+		console.log("paragraph has class " + paragraph.hasClass("paragraph"))
+        paragraph.toggleClass("expanded");
+
+        if (paragraph.hasClass("expanded")) {
+            $(this).text("Show Less");
+        } else {
+            $(this).text("Learn More");
+        }
+    });
 
 	var siteMenuClone = function() {
 
@@ -229,7 +241,6 @@ jQuery(document).ready(function($) {
 				
 	};
 	siteCountDown();
-
 	var siteDatePicker = function() {
 
 		if ( $('.datepicker').length > 0 ) {

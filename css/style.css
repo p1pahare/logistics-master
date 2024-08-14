@@ -1390,3 +1390,17 @@ h1, h2, h3, h4, h5,
 .mt20 {
   margin-top: 20px;
 }
+.paragraph {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Number of lines to show */
+  line-clamp: 4; 
+  -webkit-box-orient: vertical;
+  height: calc(1.5em * 4); /* Adjust based on line height and the number of lines */
+}
+
+.paragraph.expanded {
+  -webkit-line-clamp: unset;
+  line-clamp: unset; 
+  height: auto;
+}
