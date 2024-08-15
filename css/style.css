@@ -1199,6 +1199,12 @@ h1, h2, h3, h4, h5,
   line-height: 0;
   font-size: 3rem; }
 
+.unit-4 .unit-65-icon span {
+    line-height: 0;
+    font-size: 3rem; 
+  }
+  
+
 .unit-4 h3 {
   font-size: 20px; }
 
@@ -1401,4 +1407,33 @@ h1, h2, h3, h4, h5,
 .paragraph.expanded {
   -webkit-line-clamp: unset;
   height: auto;
+}
+
+.services-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+.service-icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-right: 15px;
+  height: 50px;
+  width: 50px;
+}
+.service-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #007bff;
+}
+.service-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
