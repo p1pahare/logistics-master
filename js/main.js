@@ -9,16 +9,19 @@ jQuery(document).ready(function($) {
 	"use strict";
 
 		$(".toggleButton").on("click", function(event) {
-        event.preventDefault();
+        event.preventDefault(event);
 		console.log("learned more toggle button")
         var paragraph = $(this).closest(".contentExp").find(".paragraph");
 		console.log("paragraph has class " + paragraph.hasClass("paragraph"))
+		    // Collapse all other paragraphs
+		$(".paragraph").not(paragraph).removeClass("expanded").closest(".contentExp").find(".toggleButton").text("Show More");
+
         paragraph.toggleClass("expanded");
 
         if (paragraph.hasClass("expanded")) {
             $(this).text("Show Less");
         } else {
-            $(this).text("Learn More");
+            $(this).text("Show More");
         }
     });
 
