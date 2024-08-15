@@ -1411,7 +1411,7 @@ h1, h2, h3, h4, h5,
 
 .services-section {
   padding: 60px 0;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 .service-icon {
   font-size: 2rem;
