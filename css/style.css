@@ -1437,3 +1437,24 @@ h1, h2, h3, h4, h5,
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+.custom-google-form iframe {
+  filter: invert(90%);
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0.9;
+}
+
+.custom-google-form:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  z-index: 10;
+}
+.Dq4amc {
+  display: none;
+}
